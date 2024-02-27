@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../css/Calendario.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Belanosima&family=Heebo:wght@500&family=Kanit:ital@1&family=Lato&family=Montserrat:wght@100;200&family=Noto+Sans+Display:wght@300;400&family=Noto+Sans+JP:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@300;500&family=Rethink+Sans:wght@500&family=Righteous&family=Roboto+Condensed&family=Roboto:wght@100;300;500&family=Slabo+27px&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&family=Victor+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="Hidden">
+    <div class="Centrado" id="Onload">
+        <div class="loadingio-spinner-ripple-lq7qsrms61j">
+            <div class="ldio-ajlmqvgjoyp">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <header id="Header">
+        <a class="Cont-Logo" href="index.html" style="text-decoration: none;">
+            <span class="material-symbols-outlined" onclick="Ojala()">content_cut</span>
+            <h1 class="Barber">Barber</h1><h1 class="Shop" id="Shop">Shop</h1>
+        </a>
+    </header>
+     <article class="Contenido">
+        <section class="Presentacion">
+            <div class="Contenido-Titulo">
+                <div class="Titulito">
+                    <h1 class="Barber2">Barber</h1><h1 class="Shop2" id="Shop2">Shop</h1>
+                </div>
+                <p>Aparta tu cita desde ya</p>
+            </div>
+            <div class="Descripcion-Presentacion">
+                <p>En nuestra barbería, te ofrecemos la comodidad de elegir el día y la hora que mejor se adapten a tu agenda para agendar tu cita. Evita esperas innecesarias y disfruta de nuestros servicios sin contratiempos. Nuestro equipo estará encantado de atenderte y brindarte una experiencia única. No pierdas la oportunidad de reservar tu momento de cuidado personal.</p>
+            </div>
+        </section>
+        <section class="Cont-Calendario">
+            <div class="Calendario">
+                <div class="Mes">
+                    <div class="Nombre-Mes">
+                        <ion-icon name="calendar-clear-outline" class="Calen-icon"></ion-icon>
+                        <h2>Enero 2024</h2>
+                    </div>
+                    <div class="Botones">
+                        <button class="Boton-Regresar"><ion-icon name="arrow-up-outline" class="Flecha"></ion-icon></button>
+                        <button class="Boton-Adelantar"><ion-icon name="arrow-down-outline" class="Flecha"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="Cont-Dias">
+                    <ol class="Dias">
+                        <li>Lun</li>
+                        <li>Mar</li>
+                        <li>Mie</li>
+                        <li>Jue</li>
+                        <li>Vie</li>
+                        <li>Sab</li>
+                        <li>Dom</li>
+                        <li class="Primer-dia" onclick="Dia('Dia1')" id="Dia1">1</li>
+                        <li onclick="Dia('Dia2')" id="Dia2">2</li>
+                        <li onclick="Dia('Dia3')" id="Dia3">3</li>
+                        <li onclick="Dia('Dia4')" id="Dia4">4</li>
+                        <li onclick="Dia('Dia5')" id="Dia5">5</li>
+                        <li onclick="Dia('Dia6')" id="Dia6">6</li>
+                        <li onclick="Dia('Dia7')" id="Dia7">7</li>
+                        <li onclick="Dia('Dia8')" id="Dia8">8</li>
+                        <li onclick="Dia('Dia9')" id="Dia9">9</li>
+                        <li onclick="Dia('Dia10')" id="Dia10">10</li>
+                        <li onclick="Dia('Dia11')" id="Dia11">11</li>
+                        <li onclick="Dia('Dia12')" id="Dia12">12</li>
+                        <li onclick="Dia('Dia13')" id="Dia13">13</li>
+                        <li onclick="Dia('Dia14')" id="Dia14">14</li>
+                        <li onclick="Dia('Dia15')" id="Dia15">15</li>
+                        <li onclick="Dia('Dia16')" id="Dia16">16</li>
+                        <li onclick="Dia('Dia17')" id="Dia17">17</li>
+                        <li onclick="Dia('Dia18')" id="Dia18">18</li>
+                        <li onclick="Dia('Dia19')" id="Dia19">19</li>
+                        <li onclick="Dia('Dia20')" id="Dia20">20</li>
+                        <li onclick="Dia('Dia21')" id="Dia21">21</li>
+                        <li onclick="Dia('Dia22')" id="Dia22">22</li>
+                        <li onclick="Dia('Dia23')" id="Dia23">23</li>
+                        <li onclick="Dia('Dia24')" id="Dia24">24</li>
+                        <li onclick="Dia('Dia25')" id="Dia25">25</li>
+                        <li onclick="Dia('Dia26')" id="Dia26">26</li>
+                        <li onclick="Dia('Dia27')" id="Dia27">27</li>
+                        <li onclick="Dia('Dia28')" id="Dia28">28</li>
+                        <li onclick="Dia('Dia29')" id="Dia29">29</li>
+                        <li onclick="Dia('Dia30')" id="Dia30">30</li>
+                        <li onclick="Dia('Dia31')" id="Dia31">31</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="Cont-Horarios" id="Cont-Horarios">
+            <div class="Horarios">
+                <button onclick="seleccionarHora('09:00 am')">09:00 am</button>
+                <button onclick="seleccionarHora('10:00 am')">10:00 am</button>
+                <button onclick="seleccionarHora('11:00 am')">11:00 am</button>
+                <button onclick="seleccionarHora('01:00 pm')">01:00 pm</button>
+                <button onclick="seleccionarHora('02:00 pm')">02:00 pm</button>
+                <button onclick="seleccionarHora('03:00 pm')">03:00 pm</button>
+                <button onclick="seleccionarHora('04:00 pm')">04:00 pm</button>
+                <button onclick="seleccionarHora('05:00 pm')">05:00 pm</button>
+                <button onclick="seleccionarHora('06:00 pm')">06:00 pm</button>
+            </div>
+        </section>
+        <section class="Button-Seleccionado">
+            <div class="Seleccionado" style="display: none;">
+                <div class="Seleccion">
+                    <p>Has seleccionado: <span id="horaSeleccionada"></span></p> <ion-icon name="close-circle-outline" class="Salir" onclick="cancelarSeleccion()"></ion-icon>
+                </div>
+            </div>
+            <div class="Button-Siguiente">
+                <a href="Cita.html" onclick="mostrarSiguiente()" style="display: none;" id="Boton-Siguiente">Siguiente</a>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div class="Logo-footer">
+            <span class="material-symbols-outlined" onclick="Ojala()">content_cut</span>
+            <h1 class="Barber">Barber</h1><h1 class="Shop" id="Shop">Shop</h1>
+        </div>
+        <div class="Opciones">
+            <div class="Titulo-Opcion">
+                <h2>Redes</h2>
+            </div>
+            <div class="Opcion-Elegida">
+                <ul class="Footer-Redes">
+                    <a href="#"><li>Instagram</li></a>
+                    <a href="#"><li>Twitter</li></a>
+                    <a href="#"><li>Facebook</li></a>
+                    <a href="#"><li>Whatsapp</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="Opciones">
+            <div class="Titulo-Opcion">
+                <h2>Menu</h2>
+            </div>
+            <div class="Opcion-Elegida">
+                <ul class="Footer-Redes">
+                    <a href="#"><li>Cortes</li></a>
+                    <a href="#"><li>Barberos</li></a>
+                    <a href="#"><li>Servicios</li></a>
+                    <a href="#"><li>Estadisticas</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="Opciones">
+            <p>Ubicados en la avenida concordia, carrera 51 entre calle 11 y 12, al frente del sambil de la candelaria, Caracas, Venezuela</p>
+        </div>
+        <div class="Derechos">
+            <p>Derechos reservados por BarberShop</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/Funcion.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

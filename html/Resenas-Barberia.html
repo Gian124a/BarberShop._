@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenas</title>
+    <link rel="stylesheet" href="../css/Resenas-Barberia.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Belanosima&family=Heebo:wght@500&family=Kanit:ital@1&family=Lato&family=Montserrat:wght@100;200&family=Noto+Sans+Display:wght@300;400&family=Noto+Sans+JP:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@300;500&family=Rethink+Sans:wght@500&family=Righteous&family=Roboto+Condensed&family=Roboto:wght@100;300;500&family=Slabo+27px&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&family=Victor+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="Hidden">
+    <div class="Centrado" id="Onload">
+        <div class="loadingio-spinner-ripple-lq7qsrms61j">
+            <div class="ldio-ajlmqvgjoyp">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="Fondo-Negro" id="Fondo-Negro"></div>
+    <div class="Cont-Resenitas" id="Resenas">
+        <button class="X" id="X" onclick="QuitarResena()">x</button>
+        <div class="Cont-Inputs">
+            <label for="">Nombre y Apellido</label>
+            <input type="text" placeholder="Roberto Sanchez">
+        </div>
+        <div class="Cont-Puntuacion">
+            <label for="">Puntuacion</label>
+            <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="Cont-TextArea">
+            <label for="">Opinion</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="Cont-Button">
+            <button>Enviar Resena</button>
+        </div>
+    </div>
+    <header id="Header">
+        <a class="Cont-Logo" href="index.html" style="text-decoration: none;">
+            <span class="material-symbols-outlined" onclick="Ojala()">content_cut</span>
+            <h1 class="Barber">Barber</h1><h1 class="Shop" id="Shop">Shop</h1>
+        </a>
+    </header>
+
+    <article class="Barberia">
+        <section class="Descripcion-Barberia">
+            <div class="Titulo">
+                <div class="Titulo-Pegado">
+                    <h1 class="Titulo-uno">Barber</h1><h1 class="Titulo-dos">Shop</h1>
+                </div>
+                <p>Barberia de gran prestigio</p>
+            </div>
+            <div class="Info-Barberia">
+                <p>En Barbershop, la opinión de nuestros clientes es fundamental. Nos encanta recibir reseñas y opiniones sobre la experiencia en nuestra barbería. Descubre lo que dicen nuestros clientes y comparte tu propia experiencia. Valoramos tus comentarios y estamos comprometidos a brindar un servicio excepcional. Únete a nuestra comunidad de clientes satisfechos y ayúdanos a seguir mejorando. ¡Tu opinión es importante para nosotros!</p>
+            </div>
+            <div class="Boton-Barberia">
+                <button class="Boton-Resena" onclick="HacerResena()">Hacer Resena</button>
+            </div>
+        </section>
+        <section class="Resenas">
+            <div class="Titulo-Resenas">
+                <h1>Resenas de Usuarios</h1>
+            </div>
+            <div class="Cont-Resena">
+                <div class="Resena-User">
+                    <div class="Fondo-Perfil-User">
+                        <img src="../imagenes/fondo-Barbero.jpg" alt="">
+                    </div>
+                    <div class="Foto-User">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                    
+                    <div class="Nombre-User">
+                        <h2>Leo Suarez</h2>
+                    </div>
+                    <div class="Star-User">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="Descripcion-User">
+                        <p>Eficacia, calidad y buen trato son las señas de identidad de David y su buen hacer. Buen profesional, buen precio y Sergio no quiere ir a otro sitio.</p>
+                    </div>
+                </div>
+                <div class="Resena-User">
+                    <div class="Fondo-Perfil-User">
+                        <img src="../imagenes/fondo-Barbero.jpg" alt="">
+                    </div>
+                    <div class="Foto-User">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                    
+                    <div class="Nombre-User">
+                        <h2>Pedro Garcia</h2>
+                    </div>
+                    <div class="Star-User">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="Descripcion-User">
+                        <p>Como siempre y ya van unos años que voy a la misma barbería, todo perfecto. Eficacia, calidad y buen trato son las señas de identidad de David y su buen hacer. Buen profesional, buen precio y Sergio no quiere ir a otro sitio.</p>
+                    </div>
+                </div>
+                <div class="Resena-User">
+                    <div class="Fondo-Perfil-User">
+                        <img src="../imagenes/fondo-Barbero.jpg" alt="">
+                    </div>
+                    <div class="Foto-User">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                    
+                    <div class="Nombre-User">
+                        <h2>Gianluca Piero</h2>
+                    </div>
+                    <div class="Star-User">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="Descripcion-User">
+                        <p>Muy contento con el trato y el resultado. Hacía tiempo que no estaba tan satisfecho con un corte. Se nota que son muy profesionales y que llevan años en ello.</p>
+                    </div>
+                </div>
+                <div class="Resena-User">
+                    <div class="Fondo-Perfil-User">
+                        <img src="../imagenes/fondo-Barbero.jpg" alt="">
+                    </div>
+                    <div class="Foto-User">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                    
+                    <div class="Nombre-User">
+                        <h2>Juan Ugarte</h2>
+                    </div>
+                    <div class="Star-User">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="Descripcion-User">
+                        <p>Muy contento con el trato y el resultado. Hacía tiempo que no estaba tan satisfecho con un corte. Se nota que son muy profesionales y que llevan años en ello.</p>
+                    </div>
+                </div>
+                <div class="Resena-User">
+                    <div class="Fondo-Perfil-User">
+                        <img src="../imagenes/fondo-Barbero.jpg" alt="">
+                    </div>
+                    <div class="Foto-User">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                    
+                    <div class="Nombre-User">
+                        <h2>Pedro Colmenarez</h2>
+                    </div>
+                    <div class="Star-User">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="Descripcion-User">
+                        <p>Muy contento con el trato y el resultado. Hacía tiempo que no estaba tan satisfecho con un corte. Se nota que son muy profesionales y que llevan años en ello.</p>
+                    </div>
+                </div>
+                <div class="Resena-User">
+                    <div class="Fondo-Perfil-User">
+                        <img src="../imagenes/fondo-Barbero.jpg" alt="">
+                    </div>
+                    <div class="Foto-User">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                    
+                    <div class="Nombre-User">
+                        <h2>Freddy Viera</h2>
+                    </div>
+                    <div class="Star-User">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="Descripcion-User">
+                        <p>Muy contento con el trato y el resultado. Hacía tiempo que no estaba tan satisfecho con un corte. Se nota que son muy profesionales y que llevan años en ello.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="Logo-footer">
+            <span class="material-symbols-outlined" onclick="Ojala()">content_cut</span>
+            <h1 class="Barber">Barber</h1><h1 class="Shop" id="Shop">Shop</h1>
+        </div>
+        <div class="Opciones">
+            <div class="Titulo-Opcion">
+                <h2>Redes</h2>
+            </div>
+            <div class="Opcion-Elegida">
+                <ul class="Footer-Redes">
+                    <a href="#"><li>Instagram</li></a>
+                    <a href="#"><li>Twitter</li></a>
+                    <a href="#"><li>Facebook</li></a>
+                    <a href="#"><li>Whatsapp</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="Opciones">
+            <div class="Titulo-Opcion">
+                <h2>Menu</h2>
+            </div>
+            <div class="Opcion-Elegida">
+                <ul class="Footer-Redes">
+                    <a href="#"><li>Cortes</li></a>
+                    <a href="#"><li>Barberos</li></a>
+                    <a href="#"><li>Servicios</li></a>
+                    <a href="#"><li>Estadisticas</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="Opciones">
+            <p>Ubicados en la avenida concordia, carrera 51 entre calle 11 y 12, al frente del sambil de la candelaria, Caracas, Venezuela</p>
+        </div>
+        <div class="Derechos">
+            <p>Derechos reservados por BarberShop</p>
+        </div>
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+            $(".star").click(function(){
+                $(this).prevAll().addBack().addClass("active");
+                $(this).nextAll().removeClass("active");
+            });
+        });
+    </script>
+
+    <script src="../js/Funcion.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
